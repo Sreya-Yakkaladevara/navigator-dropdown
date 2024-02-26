@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Navigator</title>
+    <link rel="stylesheet" href="navigator.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="container">
+        
+        <nav class="header">
+            <div class="logo">Snap</div>
+             
+            <ul id="check">
+                <li><a href="#">Features</a>
+                <ul>
+                    <li><a href="#"><i class='bx bxs-calendar'></i>Todo List</a></li>
+                    <li><a href="#"><i class='bx bxs-calendar-event'></i>Calender</a></li>
+                    <li><a href="#"><i class='bx bxs-bell'></i>Reminders</a></li>
+                    <li><a href="#"><i class='bx bx-time'></i>Planning</a></li>
+                </ul>
+                </li>
+                <li><a href="#">company</a>
+                <ul>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
+                <button class="login">Login</button>
+                <button class="register">Register</button>
+                <i class='bx bx-x' onclick="closemenu()"></i>
+            </ul>
+            <i class='bx bx-menu' onclick="openmenu()"></i>
+
+          
+        </nav>
+        <div class="row">
+            <div class="col1">
+                <h1>Make<br>Remote Work</h1>
+                <p>Get your team in sync,no matter your location streamline processes,Create team rituals,and watch productivity soar.</p>
+                <button>Learn more</button>
+                <footer>
+                   <img src="https://intro-section-with-dropdown-navigation-solution.netlify.app/images/client-databiz.svg">
+                   <img src="https://intro-section-with-dropdown-navigation-solution.netlify.app/images/client-audiophile.svg">
+                   <img src="https://intro-section-with-dropdown-navigation-solution.netlify.app/images/client-meet.svg">
+                   <img src="https://intro-section-with-dropdown-navigation-solution.netlify.app/images/client-maker.svg">
+                </footer>
+            </div>
+            <div class="col2">
+                <img src="https://intro-section-with-dropdown-navigation-main.pages.dev/images/image-hero-desktop.png" >
+            </div>
+        </div>
+        <div class="footer">
+            challenged by <a href="#">Frontend mentor</a>.Coded by <span>Sreya</span> 
+
+        </div>
+        
+        
+    </div>
+    <script>
+        let memu = document.getElementById('check')
+     
+        function openmenu(){
+            memu.style.right='0';
+        }
+        function closemenu(){
+            memu.style.right='-200px';
+        }
+    </script>
+</body>
+</html>
